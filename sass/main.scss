@@ -1,0 +1,48 @@
+@import "config";
+@import "mixins";
+
+body {
+  background: $bg-color;
+}
+
+@mixin spin($prefix) {
+  0% {
+    @include transform(rotate(0deg), $prefix); }
+  90% {
+    @include transform(rotate(0deg), $prefix); }
+  100% {
+    @include transform(rotate(360deg), $prefix); }
+}
+
+@-webkit-keyframes spin {
+  @include spin(webkit);
+}
+
+@-khtml-keyframes spin {
+  @include spin(khtml);
+}
+
+@-moz-keyframes spin {
+  @include spin(moz);
+}
+
+@-ms-keyframes spin {
+  @include spin(ms);
+}
+
+@-o-keyframes spin {
+  @include spin(o);
+}
+
+@keyframes spin {
+  @include spin(none);
+}
+
+.spin svg {
+  @include animation(spin 10s infinite ease-in-out);
+}
+
+.spin svg:hover {
+  @include animation(spin 1s infinite);
+}
+
