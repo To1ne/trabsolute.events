@@ -1,0 +1,91 @@
+body {
+  background: black; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  90% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@-khtml-keyframes spin {
+  0% {
+    -khtml-transform: rotate(0deg); }
+
+  90% {
+    -khtml-transform: rotate(0deg); }
+
+  100% {
+    -khtml-transform: rotate(360deg); } }
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  90% {
+    -moz-transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg); }
+
+  90% {
+    -ms-transform: rotate(0deg); }
+
+  100% {
+    -ms-transform: rotate(360deg); } }
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+
+  90% {
+    -o-transform: rotate(0deg); }
+
+  100% {
+    -o-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+
+  90% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  margin: -150px 0 0 -150px; }
+
+.spin {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto; }
+
+p {
+  color: white;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+p.large {
+  font-size: 2em; }
+
+.spin svg #smile {
+  -webkit-animation: spin 10s infinite ease-in-out;
+  -khtml-animation: spin 10s infinite ease-in-out;
+  -moz-animation: spin 10s infinite ease-in-out;
+  -ms-animation: spin 10s infinite ease-in-out;
+  -o-animation: spin 10s infinite ease-in-out;
+  animation: spin 10s infinite ease-in-out;
+  -webkit-transform-origin: 100px 100px;
+  -khtml-transform-origin: 100px 100px;
+  -moz-transform-origin: 100px 100px;
+  -ms-transform-origin: 100px 100px;
+  -o-transform-origin: 100px 100px;
+  transform-origin: 100px 100px; }
