@@ -1,6 +1,6 @@
 // borrowed from https://github.com/adamstac/animate.sass
 //               https://gist.github.com/Integralist/3931680
-
+//               https://github.com/Compass/compass/blob/stable/frameworks/compass/stylesheets/compass/css3/_shared.scss
 
 
 // Declariation mixin to make it easy to write a declaration with or without a prefix
@@ -19,19 +19,19 @@
 // the implementations are identical except for the property
 // prefix.
 @mixin experimental($property, $value,
-  $moz : $experimental-support-for-mozilla,
-  $webkit : $experimental-support-for-webkit,
-  $o : $experimental-support-for-opera,
-  $ms : $experimental-support-for-microsoft,
-  $khtml : $experimental-support-for-khtml,
+  $moz      : $experimental-support-for-mozilla,
+  $webkit   : $experimental-support-for-webkit,
+  $o        : $experimental-support-for-opera,
+  $ms       : $experimental-support-for-microsoft,
+  $khtml    : $experimental-support-for-khtml,
   $official : true
 ) {
-  @if $webkit and $experimental-support-for-webkit { -webkit-#{$property} : $value; }
-  @if $khtml and $experimental-support-for-khtml { -khtml-#{$property} : $value; }
-  @if $moz and $experimental-support-for-mozilla { -moz-#{$property} : $value; }
-  @if $ms and $experimental-support-for-microsoft { -ms-#{$property} : $value; }
-  @if $o and $experimental-support-for-opera { -o-#{$property} : $value; }
-  @if $official { #{$property} : $value; }
+  @if $webkit and $experimental-support-for-webkit    { @include declaration($property, $value, webkit); }
+  @if $khtml  and $experimental-support-for-khtml     { @include declaration($property, $value, khtml ); }
+  @if $moz    and $experimental-support-for-mozilla   { @include declaration($property, $value, moz   ); }
+  @if $ms     and $experimental-support-for-microsoft { @include declaration($property, $value, ms    ); }
+  @if $o      and $experimental-support-for-opera     { @include declaration($property, $value, o     ); }
+  @if $official                                       { @include declaration($property, $value, none  ); }
 }
 
 // transform - https://developer.mozilla.org/en/CSS/transform

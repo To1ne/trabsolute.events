@@ -38,11 +38,12 @@ body {
   @include spin(none);
 }
 
-.spin svg {
+.spin svg #smile {
   @include animation(spin 10s infinite ease-in-out);
+  @include experimental(transform-origin, 100px 100px);
 }
 
 .spin svg:hover {
-  @include animation(spin 1s infinite);
+  
 }
 
