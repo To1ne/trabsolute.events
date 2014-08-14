@@ -1,5 +1,5 @@
 body {
-  background: black; }
+  background: #16161e; }
 
 @-webkit-keyframes spin {
   0% {
@@ -59,9 +59,18 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 300px;
-  width: 300px;
-  margin: -150px 0 0 -150px; }
+  max-height: 400px;
+  max-width: 500px;
+  width: 100%;
+  margin-top: -200px;
+  margin-left: -250px; }
+  @media screen and (max-width: 500px) {
+    #center {
+      left: 0;
+      margin-left: 0; }
+      #center #name {
+        width: 100%;
+        height: auto; } }
 
 .spin {
   height: 200px;
