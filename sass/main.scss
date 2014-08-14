@@ -38,12 +38,46 @@ body {
   @include spin(none);
 }
 
+$center-width: 500px;
+$center-height: 400px;
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: $center-height;
+  max-width: $center-width;
+  width: 100%;
+  margin-top: - $center-height / 2;
+  margin-left: - $center-width / 2;
+  @media screen and (max-width: $center-width) {
+    left: 0;
+    margin-left: 0;
+    #name {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.spin {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+p {
+  color: $txt-color;
+  text-align: center;
+  font-family: $font-stack;
+}
+
+p.large {
+  font-size: 2em;
+}
+
 .spin svg #smile {
   @include animation(spin 10s infinite ease-in-out);
   @include experimental(transform-origin, 100px 100px);
-}
-
-.spin svg:hover {
-  
 }
 
