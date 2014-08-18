@@ -1,0 +1,26 @@
+{
+  "name": "trabsolute",
+  "version": "0.1.0",
+  "authors": [
+    "Toon Claes <toon@tonotdo.com>"
+  ],
+  "description": "Trabsolute events website.",
+  "main": "index.html",
+  "keywords": [
+    "trabsolute",
+    "events"
+  ],
+  "license": "MIT",
+  "homepage": "http://trabsolute.events",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-starter-kit": "~0.2.7"
+  }
+}

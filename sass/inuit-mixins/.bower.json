@@ -1,0 +1,28 @@
+{
+  "name": "inuit-mixins",
+  "version": "0.2.2",
+  "homepage": "https://github.com/inuitcss/tools.mixins",
+  "authors": [
+    "Harry Roberts <harry@csswizardry.com>"
+  ],
+  "description": "inuitcss’ default mixins",
+  "main": "_tools.mixins.scss",
+  "keywords": [
+    "inuitcss",
+    "oocss",
+    "css"
+  ],
+  "license": "Apache",
+  "dependencies": {
+    "inuit-defaults": "~0.2.0"
+  },
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "09e05d9b5dc0c242541c498421a3360258f982e8"
+  },
+  "_source": "git://github.com/inuitcss/tools.mixins.git",
+  "_target": "0.2.2",
+  "_originalSource": "inuit-mixins"
+}
