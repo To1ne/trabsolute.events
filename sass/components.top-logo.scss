@@ -1,0 +1,13 @@
+$name-width: 500px;
+
+#name {
+    display: block;
+    margin: 0 auto;
+    width: $name-width;
+    @media screen and (max-width: $name-width) {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+}

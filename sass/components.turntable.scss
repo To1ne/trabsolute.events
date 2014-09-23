@@ -1,0 +1,57 @@
+@mixin turn($prefix) {
+  0% {
+    @include transform(rotate(  0deg), $prefix); }
+  90% {
+    @include transform(rotate(  0deg), $prefix); }
+  100% {
+    @include transform(rotate(360deg), $prefix); }
+}
+
+@-webkit-keyframes turn {
+  @include turn(webkit);
+}
+
+@-khtml-keyframes turn {
+  @include turn(khtml);
+}
+
+@-moz-keyframes turn {
+  @include turn(moz);
+}
+
+@-ms-keyframes turn {
+  @include turn(ms);
+}
+
+@-o-keyframes turn {
+  @include turn(o);
+}
+
+@keyframes turn {
+  @include turn(none);
+}
+
+.turntable {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    @media screen and (max-width: 600px) {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+#logo {
+    #smile {
+        @include animation(turn 10s infinite ease-in-out);
+        @include experimental(transform-origin, 100px 100px);
+    }
+    @media screen and (max-width: 600px) {
+        height: 150px;
+        width: 150px;
+        #smile {
+            @include experimental(transform-origin, 75px 75px);
+        }
+    }
+
+}

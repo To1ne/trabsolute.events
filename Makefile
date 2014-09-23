@@ -1,8 +1,10 @@
 
 HAML := haml -r ./ruby/helpers.rb
-SASS := sass
+SASS := sass -E utf-8
 
-all: dirs _site/index.html _site/css/main.css
+sass_dep := $(shell find sass -name *.scss)
+
+all: dirs _site/index.html _site/css/main.min.css
 
 dirs:
 	mkdir -p _site/ _site/css/
@@ -13,13 +15,11 @@ clean:
 _site/%.html: %.haml
 	$(HAML) $< $@
 
-_site/css/%.css: %.scss
-	$(SASS) $< $@
+_site/css/%.min.css: %.scss $(sass_dep)
+	$(SASS) --style compressed $< $@
+	$(SASS) $< $(patsubst %.min.css,%.css,$@)
 
 .PHONY: all dirs clean
 
 vpath %.haml haml
 vpath %.scss sass
-
-#-include .deps/main.scss.deps
-

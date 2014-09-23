@@ -1,89 +1,118 @@
- @import "imports";
+/******************************
+ * Trabsolute.events
+ *****************************/
+/**
+ * CONTENT
+ */
+/*
+ * SETTINGS
+ * Default..............inuitcss' default settings.
+ * Colors...............Manage our color palette.
+ * Global...............Global variables and configuration.
+ * Responsive...........Set up and name our breakpoints.
+ *
+ * TOOLS
+ * Functions............inuitcss' default functions.
+ * Mixins...............inuitcss' default mixins.
+ * Mixins...............Moar mixins.
+ * Responsive...........Responsive tooling (requires responsive settings).
+ * Aliases..............Aliases onto longer inuitcss' variables and mixins.
+ *
+ * GENERIC
+ * Box-sizing...........Better default 'box-sizing'.
+ *
+ * BASE
+ * Page.................inuitcss' Page-level styles (HTML element).
+ * Page.................Page-level styles (HTML element).
+ * Headings.............Heading styles
+ *
+ * OBJECTS
+ * Buttons..............inuitcss' buttons module.
+ * Layout...............inuitcss' layout tool.
+ *
+ * COMPONENTS
+ * Toplogo..............the logo with name at the top
+ * Turntable............everything to make the table turn
+ *
+ * TRUMPS
+ * Widths...............Simple width helper classes.
+ * Widths-responsive....Polyfill for responsive width classes.
+ * Spacing..............Micro-level spacing.
+ * Show/hide............Helpers to show and side stuff.
+ */
 
-@mixin spin($prefix) {
-  0% {
-    @include transform(rotate(0deg), $prefix); }
-  90% {
-    @include transform(rotate(0deg), $prefix); }
-  100% {
-    @include transform(rotate(360deg), $prefix); }
-}
 
-@-webkit-keyframes spin {
-  @include spin(webkit);
-}
 
-@-khtml-keyframes spin {
-  @include spin(khtml);
-}
 
-@-moz-keyframes spin {
-  @include spin(moz);
-}
 
-@-ms-keyframes spin {
-  @include spin(ms);
-}
+/**
+ * SETTINGS
+ */
+@import "inuit-defaults/settings.defaults";
+@import "settings.global";
+@import "settings.colors";
+@import "inuit-responsive-settings/settings.responsive";
 
-@-o-keyframes spin {
-  @include spin(o);
-}
 
-@keyframes spin {
-  @include spin(none);
-}
 
-html {
-  font-family: $font-stack;
-  color: $txt-color;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  color: $heading-color;
-}
 
-p.large {
-  font-size: 2em;
-}
+/**
+ * TOOLS
+ */
+@import "inuit-functions/tools.functions";
+@import "inuit-mixins/tools.mixins";
+@import "tools.mixins";
+@import "inuit-responsive-tools/tools.responsive";
+@import "tools.aliases";
 
-$top-width: 500px;
-$top-height: 400px;
 
-#top {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  max-height: $top-height;
-  max-width: $top-width;
-  width: 100%;
-  /* margin-top: - $top-height / 2; */
-  margin-left: - $top-width / 2;
-  @media screen and (max-width: $top-width) {
-    left: 0;
-    margin-left: 0;
-    #name {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
 
-.spin {
-  height: 200px;
-  width: 200px;
-  margin: 0 auto;
-}
 
-#top p {
-  text-align: center;
-}
 
-.spin svg #smile {
-  @include animation(spin 10s infinite ease-in-out);
-  @include experimental(transform-origin, 100px 100px);
-}
+/**
+ * GENERIC
+ */
+@import "inuit-box-sizing/generic.box-sizing";
 
-#content {
-  margin: $top-height auto 0;
-  max-width: 800px;
-}
+
+
+
+
+/**
+ * BASE
+ */
+@import "inuit-page/base.page";
+@import "base.page";
+@import "inuit-headings/base.headings";
+
+
+
+
+
+/**
+ * OBJECTS
+ */
+//@import "inuit-buttons/objects.buttons";
+@import "inuit-layout/objects.layout";
+
+
+
+
+
+/**
+ * COMPONENTS
+ */
+@import "components.top-logo";
+@import "components.turntable";
+
+
+
+
+
+/**
+ * OBJECTS
+ */
+@import "inuit-widths/trumps.widths";
+@import "inuit-widths-responsive/trumps.widths-responsive";
+@import "inuit-spacing/trumps.spacing";

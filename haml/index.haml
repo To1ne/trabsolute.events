@@ -4,31 +4,32 @@
     %meta{ :charset => "utf-8" }
     %title Trabsolute.events
     %meta{ :content => "Trabsolute event solutions", :name => "description" }
-    %link{ :href => "css/main.css", :media => "screen", :rel => "stylesheet" }
+    %link{ :href => "css/main.min.css", :media => "screen", :rel => "stylesheet" }
     %link{ :href => "http://fonts.googleapis.com/css?family=Questrial", :rel => "stylesheet", :type => "text/css" }
   %body
-    #top
-      .spin
-        = embedded_svg "logo.svg"
-      = embedded_svg "name.svg"
-    #content
-      #what
-        %h1 What we do
-        %h2 Festivals
-        %p 
-        %h2 Crew
-        %p We will provide crew members for your event.
-        %h2 Wedding parties
-        %p Everything you need to make it a day you'll never forget.
-        %h2 Sound & light
-        %p Anything you need, we will provide it.
-      #who
-        %h1 Who are we
-        %h2 Bart
-        %p Trabsolute is being run by Bart Van Loon, also known as BVL. This highly enthousiastic and motivated person is always busy.
-      #work
-        %h1 Some of our work
-        %img{}
+    #main
+      #top-logo
+        .turntable
+          = embedded_svg "logo.svg"
+        = embedded_svg "name.svg"
+      #content
+        #what
+          %h1 What we do
+          %h2 Festivals
+          %p 
+          %h2 Crew
+          %p We will provide crew members for your event.
+          %h2 Wedding parties
+          %p Everything you need to make it a day you'll never forget.
+          %h2 Sound & light
+          %p Anything you need, we will provide it.
+        #who
+          %h1 Who are we
+          %h2 Bart
+          %p Trabsolute is being run by Bart Van Loon, also known as BVL. This highly enthousiastic and motivated person is always busy.
+        #work
+          %h1 Some of our work
+          %img{}
 
     
       
