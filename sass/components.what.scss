@@ -1,0 +1,22 @@
+/**
+ * #WHAT
+ */
+#what {
+    background: #F2F2F2;
+}
+
+.wide {
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.what__items {
+    @extend %layout;
+}
+
+
+.what__item {
+    margin: 0;
+    @extend %layout__item;
+}

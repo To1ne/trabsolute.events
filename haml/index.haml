@@ -8,21 +8,30 @@
     %link{ :href => "http://fonts.googleapis.com/css?family=Questrial", :rel => "stylesheet", :type => "text/css" }
   %body
     #main
-      #top-logo
+      %header#top-logo
         .turntable
           = embedded_svg "logo.svg"
         = embedded_svg "name.svg"
       #content
-        #what
-          %h1 What we do
-          %h2 Festivals
-          %p 
-          %h2 Crew
-          %p We will provide crew members for your event.
-          %h2 Wedding parties
-          %p Everything you need to make it a day you'll never forget.
-          %h2 Sound & light
-          %p Anything you need, we will provide it.
+        %section#what 
+          .wide
+            %h1 What we do
+            %ul.what__items
+              %li.what__item.desk-one-quarter.lap-one-half
+                %h2 Festivals
+                %p Camping bla die bla
+              /
+              %li.what__item.desk-one-quarter.lap-one-half
+                %h2 Crew
+                %p We will provide crew members for your event.
+              /
+              %li.what__item.desk-one-quarter.lap-one-half
+                %h2 Wedding parties
+                %p Everything you need to make it a day you'll never forget.
+              /
+              %li.what__item.desk-one-quarter.lap-one-half
+                %h2 Sound & light
+                %p Anything you need, we will provide it.
         #who
           %h1 Who are we
           %h2 Bart

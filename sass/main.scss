@@ -19,6 +19,7 @@
  * Aliases..............Aliases onto longer inuitcss' variables and mixins.
  *
  * GENERIC
+ * Normalize.css........A level playing field.
  * Box-sizing...........Better default 'box-sizing'.
  *
  * BASE
@@ -33,6 +34,7 @@
  * COMPONENTS
  * Toplogo..............the logo with name at the top
  * Turntable............everything to make the table turn
+ * What.................the 'what we do' section
  *
  * TRUMPS
  * Widths...............Simple width helper classes.
@@ -73,6 +75,7 @@
 /**
  * GENERIC
  */
+@import "inuit-normalize/generic.normalize";
 @import "inuit-box-sizing/generic.box-sizing";
 
 
@@ -105,6 +108,7 @@
  */
 @import "components.top-logo";
 @import "components.turntable";
+@import "components.what";
 
 
 
