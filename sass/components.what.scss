@@ -2,13 +2,11 @@
  * #WHAT
  */
 #what {
+    color: #333;
     background: #F2F2F2;
-}
-
-.wide {
-    max-width: 1276px;
-    margin: 0 auto;
-    padding: 0 24px;
+    h2 {
+        margin-top: quarter($inuit-base-spacing-unit);
+    }
 }
 
 .what__items {

@@ -1,0 +1,24 @@
+/**
+ * #CONTACT
+ */
+#contact {
+    color: #FFF;
+    margin: $inuit-base-spacing-unit 0;
+    text-align: right;
+
+    span {
+        clear: right;
+        display: block;
+    }
+    a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+address {
+    font-style: normal;
+}

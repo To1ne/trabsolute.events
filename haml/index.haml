@@ -4,7 +4,7 @@
     %meta{ :charset => "utf-8" }
     %title Trabsolute.events
     %meta{ :content => "Trabsolute event solutions", :name => "description" }
-    %link{ :href => "css/main.min.css", :media => "screen", :rel => "stylesheet" }
+    %link{ :href => "css/main.css", :media => "screen", :rel => "stylesheet" }
     %link{ :href => "http://fonts.googleapis.com/css?family=Questrial", :rel => "stylesheet", :type => "text/css" }
   %body
     #main
@@ -12,33 +12,48 @@
         .turntable
           = embedded_svg "logo.svg"
         = embedded_svg "name.svg"
-      #content
-        %section#what 
-          .wide
-            %h1 What we do
-            %ul.what__items
-              %li.what__item.desk-one-quarter.lap-one-half
-                %h2 Festivals
-                %p Camping bla die bla
-              /
-              %li.what__item.desk-one-quarter.lap-one-half
-                %h2 Crew
-                %p We will provide crew members for your event.
-              /
-              %li.what__item.desk-one-quarter.lap-one-half
-                %h2 Wedding parties
-                %p Everything you need to make it a day you'll never forget.
-              /
-              %li.what__item.desk-one-quarter.lap-one-half
-                %h2 Sound & light
-                %p Anything you need, we will provide it.
-        #who
+      %section#what
+        .wide-wrapper
+          %h1 What we do
+          %ul.what__items
+            -# no whitespace is allowed between </li><li>
+            -# (see https://github.com/csswizardry/csswizardry-grids#classes-in-markup)
+            %li.what__item.desk-one-quarter.lap-one-half.palm-one-whole
+              %h2 Festivals
+              %p Camping bla die bla
+            %li.what__item.desk-one-quarter.lap-one-half.palm-one-whole>
+              %h2 Crew
+              %p We will provide crew members for your event.
+            %li.what__item.desk-one-quarter.lap-one-half.palm-one-whole>
+              %h2 Wedding parties
+              %p Everything you need to make it a day you'll never forget.
+            %li.what__item.desk-one-quarter.lap-one-half.palm-one-whole>
+              %h2 Sound & light
+              %p Anything you need, we will provide it.
+      %section#who
+        .wrapper
           %h1 Who are we
           %h2 Bart
-          %p Trabsolute is being run by Bart Van Loon, also known as BVL. This highly enthousiastic and motivated person is always busy.
-        #work
-          %h1 Some of our work
-          %img{}
-
-    
-      
+          %p 
+            Trabsolute.events is being run by Bart Van Loon, also known as BVL.
+            This highly enthousiastic and motivated person is always busy.
+      %section#clients
+        .wrapper
+          %h1 Some of our clients
+          %h2 Tommorowland
+          %p 
+            \At the Tommorowland we&mdash;amongst a number of other 
+            \companies&mdash;are responsible for the camping of Dreamville. We
+            build up the the campsite and provide support for electricty and 
+            plumbing during the festival weekends.
+          %h2 Opel
+          %p Company presentation
+      %footer#contact
+        .wrapper
+          %address
+            %p Trabsolute.events
+            %span Bart Van Loon
+            %span
+              - encoded_email = email_encode "bart@trabsolute.events"
+              %a{ :href => "mailto:" + encoded_email }
+                != encoded_email

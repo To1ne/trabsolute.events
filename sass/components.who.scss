@@ -1,0 +1,10 @@
+/**
+ * #WHO
+ */
+#who {
+    background: url("../img/bart.jpg") center center;
+    @include experimental(background-size, cover);
+    min-height: 240px;
+    color: #FFF;
+    text-shadow: 1px 1px 0px #000;
+}

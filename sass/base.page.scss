@@ -4,3 +4,16 @@
 html {
     font-family: $font-stack;
 }
+
+
+/**
+ * Remove default margin.
+ */
+body {
+    margin: 0;
+}
+
+
+section {
+    padding-top: 1px; /* TODO correction for some */
+}
