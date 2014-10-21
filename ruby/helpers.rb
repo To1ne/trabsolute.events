@@ -10,3 +10,12 @@ def embedded_svg filename, options={}
   end
   svg
 end
+
+# inspired by http://www.wbwip.com/wbw/emailencoder.html
+def email_encode address
+  enc = ''
+  address.chars do |c|
+    enc << "\&##{c.ord};"
+  end
+  enc
+end
