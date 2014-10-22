@@ -1,26 +1,31 @@
+HTDOCS := _site/htdocs
 
-HAML := haml -r ./ruby/helpers.rb
-SASS := sass
+HAML := haml -r ./ruby/helpers.rb --no-escape-attrs
+SASS := sass -E utf-8
+CP := cp
 
-htmls:=$(patsubst haml/%.haml,_site/%.html,$(wildcard haml/*.haml))
-csss:=$(patsubst sass/%.scss,_site/css/%.css,$(wildcard sass/*.scss))
+sass_dep := $(shell find sass -name *.scss)
+img := $(patsubst assets/%,$(HTDOCS)/img/%,$(wildcard assets/*.jpg))
 
-all: dirs $(htmls) $(csss)
+all: dirs $(HTDOCS)/index.html $(HTDOCS)/css/main.min.css $(img)
 
 dirs:
-	mkdir -p _site/ _site/css/
+	mkdir -p $(HTDOCS)/ $(HTDOCS)/css/ $(HTDOCS)/img
 
 clean:
-	rm -rf _site
+	rm -rf $(HTDOCS)/*
 
-_site/%.html: %.haml
+$(HTDOCS)/%.html: %.haml
 	$(HAML) $< $@
 
-_site/css/%.css: %.scss
-	$(SASS) $< $@
+$(HTDOCS)/css/%.min.css: %.scss $(sass_dep)
+	$(SASS) --style compressed $< $@
+	$(SASS) $< $(patsubst %.min.css,%.css,$@)
+
+$(HTDOCS)/img/%: assets/%
+	$(CP) -a $^ $@
 
 .PHONY: all dirs clean
 
 vpath %.haml haml
 vpath %.scss sass
-
