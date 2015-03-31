@@ -1,20 +1,27 @@
-/**
- * #WHAT
- */
 #what {
-    color: #333;
-    background: #F2F2F2;
-    h2 {
-        margin-top: quarter($inuit-base-spacing-unit);
-    }
+    height: 300%;
+    padding-top: 0;
 }
 
-.what__items {
-    @extend %layout;
+#what h1 {
+    z-index: 30;
+    float: left;
+    position: sticky;
+    top: 20px;
+    left: 30px;
+    color: #000000;
 }
 
+[id^='what__'] {
+    height: 33.333333%;
+}
 
-.what__item {
-    margin: 0;
-    @extend %layout__item;
+#what__crew {
+    background-image: url('../img/crew.jpg'); /* source: https://www.flickr.com/photos/davehamster/7461798308 */
+}
+#what__sound-and-light {
+    background-image: url('../img/sound-and-light.jpg');
+}
+#what__facility {
+    background-image: url('../img/facility.jpg'); /* source: https://www.flickr.com/photos/rhodes/10386853/ */
 }

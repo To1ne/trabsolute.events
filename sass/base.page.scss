@@ -3,6 +3,7 @@
  */
 html {
     font-family: $font-stack;
+    height: 100%;
 }
 
 
@@ -11,9 +12,8 @@ html {
  */
 body {
     margin: 0;
+    height: 100%;
+    background: transparent;
 }
 
 
-section {
-    padding-top: 1px; /* TODO correction for some */
-}

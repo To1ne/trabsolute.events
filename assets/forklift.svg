@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="226.77px" height="226.77px" viewBox="0 0 226.77 226.77" enable-background="new 0 0 226.77 226.77" xml:space="preserve">
+<rect x="-10.582" y="-5.88" width="245.522" height="241.418"/>
+<g>
+	<g>
+		<path id="turntable" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M122.918,202.151
+			c-17.125,0-31.058-13.934-31.058-31.06c0-17.125,13.933-31.058,31.058-31.058s31.059,13.933,31.059,31.058
+			C153.977,188.218,140.043,202.151,122.918,202.151z"/>
+		<path id="smile" fill="#FFFFFF" d="M122.918,195.013c-2.643,0-4.785-2.142-4.785-4.784s2.143-4.785,4.785-4.785
+			c7.916,0,14.355-6.44,14.355-14.355c0-2.643,2.143-4.785,4.785-4.785s4.785,2.143,4.785,4.785
+			C146.844,184.279,136.11,195.013,122.918,195.013z"/>
+		<path id="centerdot" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M122.918,174.028
+			c-1.619,0-2.936-1.317-2.936-2.937c0-1.617,1.316-2.936,2.936-2.936s2.936,1.318,2.936,2.936
+			C125.854,172.711,124.537,174.028,122.918,174.028z"/>
+	</g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M45.568,202.151
+		c-11.295,0-20.484-9.189-20.484-20.484c0-11.296,9.189-20.485,20.484-20.485s20.484,9.189,20.484,20.485
+		C66.053,192.962,56.863,202.151,45.568,202.151z"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="93.521" y1="181.667" x2="66.053" y2="181.667"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" points="25.084,181.667 21.182,181.667 
+		21.182,113.306 84.365,113.306 95.457,125.75 136.596,125.75 136.596,143.77 	"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" points="35.777,113.306 35.777,51.034 
+		96.154,51.034 126.461,125.75 	"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" points="126.461,24.618 172.568,179.209 
+		205.588,166.303 	"/>
+</g>
+</svg>

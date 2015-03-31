@@ -41,17 +41,19 @@
     }
 }
 
-#logo {
-    #smile {
-        @include animation(turn 10s infinite ease-in-out);
-        @include experimental(transform-origin, 100px 100px);
-    }
-    @media screen and (max-width: 600px) {
-        height: 150px;
-        width: 150px;
-        #smile {
-            @include experimental(transform-origin, 75px 75px);
-        }
-    }
+#smile {
+    @include animation(turn 10s infinite ease-in-out);
+    @include experimental(transform-origin, 100px 100px);
+}
 
+#what__facility #smile {
+    @include experimental(transform-origin, 123px 171px);
+}
+
+@media screen and (max-width: 600px) {
+    height: 150px;
+    width: 150px;
+    #smile {
+        @include experimental(transform-origin, 75px 75px);
+    }
 }
