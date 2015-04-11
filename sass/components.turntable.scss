@@ -50,6 +50,10 @@
     @include experimental(transform-origin, 123px 171px);
 }
 
+#what__sound-and-light #smile {
+    @include experimental(transform-origin, 113px 171px);
+}
+
 @media screen and (max-width: 600px) {
     height: 150px;
     width: 150px;

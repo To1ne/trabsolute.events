@@ -26,15 +26,15 @@
  * Page.................inuitcss' Page-level styles (HTML element).
  * Page.................Page-level styles (HTML element).
  * Headings.............Heading styles
- * Sections.............Section styles
  *
  * OBJECTS
  * Buttons..............inuitcss' buttons module.
  * Layout...............inuitcss' layout tool.
  * Wrappers.............wrapper classes.
+ * Sections.............Section styles
  *
  * COMPONENTS
- * Toplogo..............the logo with name at the top
+ * Top logo.............the logo with name at the top
  * Turntable............everything to make the table turn
  * What.................the 'what we do' section
  * Who..................the 'who we are' section
@@ -55,8 +55,8 @@
  * SETTINGS
  */
 @import "inuit-defaults/settings.defaults";
-@import "settings.global";
 @import "settings.colors";
+@import "settings.global";
 @import "inuit-responsive-settings/settings.responsive";
 
 
@@ -92,7 +92,6 @@
 @import "inuit-page/base.page";
 @import "base.page";
 @import "inuit-headings/base.headings";
-@import "base.sections";
 
 
 
@@ -103,6 +102,7 @@
  */
 @import "inuit-layout/objects.layout";
 @import "objects.wrappers";
+@import "objects.sections";
 
 
 

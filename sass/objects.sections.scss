@@ -1,10 +1,10 @@
-section, article, header {
-    padding-top: 1px; /* TODO correction for some */
-}
-
 section, header {
     height: 100%;
     background: #16161E;
+}
+
+section, article, header {
+    padding-top: 1px; /* correction needed for some reason */
 }
 
 article {
