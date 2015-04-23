@@ -1,6 +1,6 @@
 #what {
-    height: 300%;
     padding-top: 0;
+    background-image: url('../img/crew.jpg'); /* source: https://www.flickr.com/photos/davehamster/7461798308 */
 }
 
 #what h1 {
@@ -12,16 +12,50 @@
     color: #000000;
 }
 
-[id^='what__'] {
-    height: 33.333333%;
+#what svg {
+    opacity: 0.7;
+    margin:0 auto;
 }
 
-#what__crew {
+#what article {
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+}
+
+#what .svg-inline {
+    width: 100%;
+    height: 226px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#what .svg-inline::before,
+#what .svg-inline::after {
+    content: "";
+    display: block;
+    background: rgba(1,0,0,0.7);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+}
+
+#what .svg-inline::before {
+    margin-left: -113.5px;
+    left: 0;
+}
+#what .svg-inline::after {
+    margin-right: -113.5px;
+    right: 0;
+}
+
+#whut__crew {
     background-image: url('../img/crew.jpg'); /* source: https://www.flickr.com/photos/davehamster/7461798308 */
 }
-#what__sound-and-light {
+#whut__sound-and-light {
     background-image: url('../img/sound-and-light.jpg');
 }
-#what__facility {
+#whut__facility {
     background-image: url('../img/facility.jpg'); /* source: https://www.flickr.com/photos/rhodes/10386853/ */
 }

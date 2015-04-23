@@ -13,23 +13,27 @@
       .company-name
         = embedded_svg "name.svg"
     %section#what
-      %h1 What we do
-      %article#what__crew
-        %div.banner
-          %h2 Crew
-          %p We will provide crew members for your event. We can help you find Technicians, Drivers & Stagehands.
-      %article#what__sound-and-light
-        %div.banner
-          = embedded_svg "speaker-clear.svg"
-          %h2 Sound & Light
-          %p Every party needs sound & light. Anything you need, we'll get it!
-      %article#what__facility
-        %div.banner
+      -#%h1 What we do
+      %ul#what-items.layout
+        -# no whitespace is allowed between </li><li>
+        -# (see https://github.com/csswizardry/csswizardry-grids#classes-in-markup)
+        %li#what__crew.layout__item.desk-one-third.lap-one-half.palm-one-whole
+          %article
+            %h2 Crew
+            %p We will provide crew members for your event. We can help you find Technicians, Drivers & Stagehands.
+        %li#what__sound-and-light.layout__item.desk-one-third.lap-one-half.palm-one-whole>
+          %div.svg-inline
+            = embedded_svg "speaker-clear.svg"
+          %article
+            %h2 Sound & Light
+            %p Every party needs sound & light. Anything you need, we'll get it!
+        %li#what__facility.layout__item.desk-one-third.lap-one-half.palm-one-whole>
           = embedded_svg "forklift.svg"
-          %h2 Facility management
-          %p Infrastructure (entrance, fencing, decoration,
-          Electricity (power supply and distribution)
-          Transport (on-site and off-site)
+          %article
+            %h2 Facility management
+            %p Infrastructure (entrance, fencing, decoration,
+            Electricity (power supply and distribution)
+            Transport (on-site and off-site)
     %section#who
       %h1 Who are we
       %article#who__bart
