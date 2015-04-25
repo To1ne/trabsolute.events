@@ -14,22 +14,28 @@
         = embedded_svg "name.svg"
     %section#what
       -#%h1 What we do
-      %ul#what-items.layout
-        -# no whitespace is allowed between </li><li>
-        -# (see https://github.com/csswizardry/csswizardry-grids#classes-in-markup)
-        %li#what__crew.layout__item.desk-one-third.lap-one-half.palm-one-whole
-          %article
+      %article#what__crew
+        %div.what__banner
+          %div.what__icon.desk-one-third.palm-one-whole
+            %div.what__icon--bg
+              = embedded_svg "speaker-clear.svg"
+          %div.what__desc.desk-two-thirds.palm-one-whole>
             %h2 Crew
             %p We will provide crew members for your event. We can help you find Technicians, Drivers & Stagehands.
-        %li#what__sound-and-light.layout__item.desk-one-third.lap-one-half.palm-one-whole>
-          %div.svg-inline
-            = embedded_svg "speaker-clear.svg"
-          %article
+      %article#what__sound-and-light
+        %div.what__banner
+          %div.what__icon.desk-one-third.palm-one-whole
+            %div.what__icon--bg
+              = embedded_svg "speaker-clear.svg"
+          %div.what__desc.desk-two-thirds.palm-one-whole>
             %h2 Sound & Light
             %p Every party needs sound & light. Anything you need, we'll get it!
-        %li#what__facility.layout__item.desk-one-third.lap-one-half.palm-one-whole>
-          = embedded_svg "forklift.svg"
-          %article
+      %article#what__facility
+        %div.what__banner
+          %div.what__icon.desk-one-third.palm-one-whole
+            %div.what__icon--bg
+              = embedded_svg "forklift.svg"
+          %div.what__desc.desk-two-thirds.palm-one-whole>
             %h2 Facility management
             %p Infrastructure (entrance, fencing, decoration,
             Electricity (power supply and distribution)

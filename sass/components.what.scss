@@ -1,61 +1,75 @@
 #what {
+    height: 300%;
     padding-top: 0;
-    background-image: url('../img/crew.jpg'); /* source: https://www.flickr.com/photos/davehamster/7461798308 */
 }
 
-#what h1 {
-    z-index: 30;
-    float: left;
-    position: sticky;
-    top: 20px;
-    left: 30px;
-    color: #000000;
+[id^='what__'] {
+    height: 33.333333%;
 }
 
-#what svg {
-    opacity: 0.7;
-    margin:0 auto;
+.what__banner {
+    @extend %layout;
+    margin-top: 5%;
+    padding-top: 5%;
+    height: 50%;
 }
 
-#what article {
-    background: rgba(0,0,0,0.7);
-    padding: 10px;
-}
-
-#what .svg-inline {
-    width: 100%;
+.what__icon,
+.what__desc {
+    @extend %layout__item;
     height: 226px;
+}
+
+.what__icon {
+    opacity: $banner-opacity;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.what__icon--bg {
+    width: 100%;
     display: block;
     position: relative;
     overflow: hidden;
 }
-
-#what .svg-inline::before,
-#what .svg-inline::after {
+.what__icon--bg::before,
+.what__icon--bg::after {
     content: "";
     display: block;
-    background: rgba(1,0,0,0.7);
+    background: #000000;
     height: 100%;
     width: 50%;
     position: absolute;
     top: 0;
 }
-
-#what .svg-inline::before {
+.what__icon--bg::before {
     margin-left: -113.5px;
     left: 0;
 }
-#what .svg-inline::after {
+.what__icon--bg::after {
     margin-right: -113.5px;
     right: 0;
 }
+.what__icon svg {
+    margin:0 auto;
+}
 
-#whut__crew {
+.what__desc {
+    background: $banner-background-color;
+}
+
+#what__crew {
     background-image: url('../img/crew.jpg'); /* source: https://www.flickr.com/photos/davehamster/7461798308 */
 }
-#whut__sound-and-light {
+#what__sound-and-light {
     background-image: url('../img/sound-and-light.jpg');
+    .what__banner {
+	@extend %layout--rev;
+    }
+    .what__desc {
+	text-align: right !important;
+    }
 }
-#whut__facility {
+#what__facility {
     background-image: url('../img/facility.jpg'); /* source: https://www.flickr.com/photos/rhodes/10386853/ */
 }
