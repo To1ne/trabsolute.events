@@ -34,8 +34,9 @@
  * Sections.............Section styles
  *
  * COMPONENTS
- * Top logo.............the logo with name at the top
+ * Header...............the logo with name at the top
  * Turntable............everything to make the table turn
+ * Nav..................navigation bar
  * What.................the 'what we do' section
  * Who..................the 'who we are' section
  * Footer...............the page footer
@@ -111,8 +112,9 @@
 /**
  * COMPONENTS
  */
-@import "components.top-logo";
+@import "components.header";
 @import "components.turntable";
+@import "components.nav";
 @import "components.what";
 @import "components.who";
 @import "components.footer";
@@ -122,7 +124,7 @@
 
 
 /**
- * OBJECTS
+ * TRUMPS
  */
 @import "inuit-widths/trumps.widths";
 @import "inuit-widths-responsive/trumps.widths-responsive";
