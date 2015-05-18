@@ -1,6 +1,5 @@
 #what {
     height: 300%;
-    padding-top: 0;
 }
 
 [id^='what__'] {
@@ -62,7 +61,9 @@
     background-image: url('../img/crew.jpg'); /* source: https://www.flickr.com/photos/davehamster/7461798308 */
 }
 #what__sound-and-light {
-    background-image: url('../img/sound-and-light.jpg');
+    /* old source: 
+    background-image: url('../img/sound-and-light.jpg'); /* source: https://www.flickr.com/photos/maximeraphael/14410133394 */
+    background-image: url('../img/sound-and-light.jpg'); /* source: https://www.flickr.com/photos/hlkljgk/4716374366 */
     .what__banner {
 	@extend %layout--rev;
     }

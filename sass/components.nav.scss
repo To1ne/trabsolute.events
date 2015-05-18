@@ -1,18 +1,21 @@
-
 nav {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 5px;
+    height: 55px;
 }
 
 .nav {
     @extend %layout;
+    height: 100%;
 }
 
 .nav__item {
     @extend %layout__item;
     text-align: center;
     font-size: 1.5em;
+    height: 100%;
+    padding-bottom: 4px;
 }
 
 .nav__item a {
@@ -38,3 +41,41 @@ nav {
     display: none;
 }
 
+.nav__item {
+    @extend %layout__item;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.nav__item a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #666;
+}
+.nav__item a:hover {
+    color: $inuit-base-text-color;
+
+    polyline {
+	stroke: $inuit-base-text-color;
+    }
+}
+
+.nav--top {
+    background: $dark-color;
+    position: sticky;
+    top: 0;
+    z-index: 70;
+}
+
+.nav__item--active {
+    background: #cccccc;
+}
+
+.nav__item--active a:hover {
+    color: #666;
+}
+
+.nav__item--active svg {
+}

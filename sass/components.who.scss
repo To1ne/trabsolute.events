@@ -6,7 +6,9 @@
     @include experimental(background-size, cover);
     min-height: 240px;
     color: #FFF;
-    text-shadow: 1px 1px 0px #000;
+    /* text-shadow: 1px 1px 0px #000; */
+    padding-top: 0; /* undo the crazy correction */
+
 }
 
 #who article {

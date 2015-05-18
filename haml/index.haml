@@ -32,7 +32,24 @@
               Contact
               = embedded_svg "chevron-down.svg"
     %section#what
-      -#%h1 What we do
+      %nav.nav--top
+        %ul.nav
+          %li.nav__item.nav__item--active.desk-one-quarter.palm-one-whole<
+            %a{ :href => "#what"} 
+              What we do
+              = embedded_svg "chevron-hor.svg"
+          %li.nav__item.desk-one-quarter.palm-one-whole><
+            %a{ :href => "#who"}
+              Who we are
+              = embedded_svg "chevron-down.svg"
+          %li.nav__item.desk-one-quarter.palm-one-whole><
+            %a{ :href => "#clients"} 
+              Some of our Clients
+              = embedded_svg "chevron-down.svg"
+          %li.nav__item.desk-one-quarter.palm-one-whole><
+            %a{ :href => "#footer-spacer"} 
+              Contact
+              = embedded_svg "chevron-down.svg"
       %article#what__crew
         .what__banner
           .what__icon.desk-one-third.palm-one-whole
@@ -60,7 +77,24 @@
             Electricity (power supply and distribution)
             Transport (on-site and off-site)
     %section#who
-      %h1 Who are we
+      %nav.nav--top
+        %ul.nav
+          %li.nav__item.desk-one-quarter.palm-one-whole<
+            %a{ :href => "#what"} 
+              What we do
+              = embedded_svg "chevron-down.svg"
+          %li.nav__item.nav__item--active.desk-one-quarter.palm-one-whole><
+            %a{ :href => "#who"}
+              Who we are
+              = embedded_svg "chevron-hor.svg"
+          %li.nav__item.desk-one-quarter.palm-one-whole><
+            %a{ :href => "#clients"} 
+              Some of our Clients
+              = embedded_svg "chevron-down.svg"
+          %li.nav__item.desk-one-quarter.palm-one-whole><
+            %a{ :href => "#footer-spacer"} 
+              Contact
+              = embedded_svg "chevron-down.svg"
       %article#who__bart
         .banner
           %p Trabsolute.events is being run by Bart Van Loon, also known as BVL.
