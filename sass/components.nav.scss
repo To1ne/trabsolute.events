@@ -54,10 +54,11 @@ nav {
     display: block;
     color: #666;
 }
-.nav__item a:hover {
+.nav__item a:hover,
+.nav__item--active a {
     color: $inuit-base-text-color;
 
-    polyline {
+    polyline, line {
 	stroke: $inuit-base-text-color;
     }
 }
@@ -70,11 +71,9 @@ nav {
 }
 
 .nav__item--active {
-    background: #cccccc;
 }
 
 .nav__item--active a:hover {
-    color: #666;
 }
 
 .nav__item--active svg {
