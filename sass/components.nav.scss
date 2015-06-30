@@ -62,19 +62,3 @@ nav {
 	stroke: $inuit-base-text-color;
     }
 }
-
-.nav--top {
-    background: $dark-color;
-    position: sticky;
-    top: 0;
-    z-index: 70;
-}
-
-.nav__item--active {
-}
-
-.nav__item--active a:hover {
-}
-
-.nav__item--active svg {
-}

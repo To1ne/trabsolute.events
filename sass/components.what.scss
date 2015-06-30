@@ -8,9 +8,10 @@
 
 .what__banner {
     @extend %layout;
-    margin-top: 5%;
-    padding-top: 5%;
-    height: 50%;
+    padding-top: 30%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
 }
 
 .what__icon,
@@ -55,6 +56,15 @@
 
 .what__desc {
     background: $banner-background-color;
+}
+
+.what__desc,
+.what__icon--bg {
+    padding-bottom: 100%;
+}
+.what__icon--bg figure {
+    margin: 0;
+    border-bottom: 9999px solid black;
 }
 
 #what__crew {

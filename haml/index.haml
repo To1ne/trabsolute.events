@@ -32,29 +32,12 @@
               Contact
               = embedded_svg "chevron-down.svg"
     %section#what
-      %nav.nav--top
-        %ul.nav
-          %li.nav__item.nav__item--active.desk-one-quarter.palm-one-whole<
-            %a{ :href => "#what"} 
-              What we do
-              = embedded_svg "chevron-hor.svg"
-          %li.nav__item.desk-one-quarter.palm-one-whole><
-            %a{ :href => "#who"}
-              Who we are
-              = embedded_svg "chevron-down.svg"
-          %li.nav__item.desk-one-quarter.palm-one-whole><
-            %a{ :href => "#clients"} 
-              Some of our Clients
-              = embedded_svg "chevron-down.svg"
-          %li.nav__item.desk-one-quarter.palm-one-whole><
-            %a{ :href => "#footer-spacer"} 
-              Contact
-              = embedded_svg "chevron-down.svg"
       %article#what__crew
         .what__banner
           .what__icon.desk-one-third.palm-one-whole
             .what__icon--bg
-              = embedded_svg "speaker-clear.svg"
+              %figure
+                = embedded_svg "speaker-clear.svg"
           .what__desc.desk-two-thirds.palm-one-whole>
             %h2 Crew
             %p We will provide crew members for your event. We can help you find Technicians, Drivers & Stagehands.
@@ -62,7 +45,8 @@
         .what__banner
           .what__icon.desk-one-third.palm-one-whole
             .what__icon--bg
-              = embedded_svg "speaker-clear.svg"
+              %figure
+                = embedded_svg "speaker-clear.svg"
           .what__desc.desk-two-thirds.palm-one-whole>
             %h2 Sound & Light
             %p Every party needs sound & light. Anything you need, we'll get it!
@@ -70,31 +54,14 @@
         .what__banner
           .what__icon.desk-one-third.palm-one-whole
             .what__icon--bg
-              = embedded_svg "forklift.svg"
+              %figure
+                = embedded_svg "forklift.svg"
           .what__desc.desk-two-thirds.palm-one-whole>
             %h2 Facility management
             %p Infrastructure (entrance, fencing, decoration,
             Electricity (power supply and distribution)
             Transport (on-site and off-site)
     %section#who
-      %nav.nav--top
-        %ul.nav
-          %li.nav__item.desk-one-quarter.palm-one-whole<
-            %a{ :href => "#what"} 
-              What we do
-              = embedded_svg "chevron-down.svg"
-          %li.nav__item.nav__item--active.desk-one-quarter.palm-one-whole><
-            %a{ :href => "#who"}
-              Who we are
-              = embedded_svg "chevron-hor.svg"
-          %li.nav__item.desk-one-quarter.palm-one-whole><
-            %a{ :href => "#clients"} 
-              Some of our Clients
-              = embedded_svg "chevron-down.svg"
-          %li.nav__item.desk-one-quarter.palm-one-whole><
-            %a{ :href => "#footer-spacer"} 
-              Contact
-              = embedded_svg "chevron-down.svg"
       %article#who__bart
         .banner
           %p Trabsolute.events is being run by Bart Van Loon, also known as BVL.
