@@ -20,4 +20,10 @@ article {
     background-size: cover;
 }
 
-
+h1 {
+  text-align: center;
+  margin: 0 0 -1.5em;
+  color: $dark-color;
+  position: sticky;
+  top: 1em;
+}
