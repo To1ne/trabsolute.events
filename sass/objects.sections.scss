@@ -22,13 +22,15 @@ article {
 
 /**
  * 1. Make it easier to use ems for margins
- * 2. To place the heading over the articles
+ * 2. Use top padding to ensure the #anchor link jumps correctly
+ * 3. To place the heading over the articles
  */
 h1 {
   text-align: center;
-  line-height: 1em;   /* [1] */
-  margin: 1em 0 -2em; /* [2] */
+  line-height: 1em; /* [1] */
+  padding-top: 1em; /* [2] */
+  margin: 0 0 -2em; /* [3] */
   color: $dark-color;
   position: sticky;
-  top: 1em;
+  top: 0;
 }

@@ -1,4 +1,5 @@
 #what {
+  height: auto;
 }
 
 [id^='what__'] {
@@ -7,10 +8,10 @@
 
 .what__banner {
     @extend %layout;
-    padding-top: 30%;
-    height: 100%;
-    overflow: hidden;
+    padding-top: 50vh;
+    height: 100vh;
     display: block;
+    overflow: hidden;
 }
 
 .what__icon,
