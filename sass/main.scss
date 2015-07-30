@@ -55,10 +55,10 @@
 /**
  * SETTINGS
  */
-@import "inuit-defaults/settings.defaults";
+//@import "inuit-defaults/settings.defaults";
 @import "settings.colors";
 @import "settings.global";
-@import "inuit-responsive-settings/settings.responsive";
+//@import "inuit-responsive-settings/settings.responsive";
 
 
 
@@ -67,10 +67,10 @@
 /**
  * TOOLS
  */
-@import "inuit-functions/tools.functions";
-@import "inuit-mixins/tools.mixins";
+//@import "inuit-functions/tools.functions";
+//@import "inuit-mixins/tools.mixins";
 @import "tools.mixins";
-@import "inuit-responsive-tools/tools.responsive";
+//@import "inuit-responsive-tools/tools.responsive";
 @import "tools.aliases";
 
 
@@ -81,7 +81,7 @@
  * GENERIC
  */
 //@import "inuit-normalize/generic.normalize";
-@import "inuit-box-sizing/generic.box-sizing";
+//@import "inuit-box-sizing/generic.box-sizing";
 
 
 
@@ -90,9 +90,9 @@
 /**
  * BASE
  */
-@import "inuit-page/base.page";
+//@import "inuit-page/base.page";
 @import "base.page";
-@import "inuit-headings/base.headings";
+//@import "inuit-headings/base.headings";
 
 
 
@@ -101,7 +101,7 @@
 /**
  * OBJECTS
  */
-@import "inuit-layout/objects.layout";
+//@import "inuit-layout/objects.layout";
 @import "objects.wrappers";
 @import "objects.sections";
 
@@ -126,6 +126,6 @@
 /**
  * TRUMPS
  */
-@import "inuit-widths/trumps.widths";
-@import "inuit-widths-responsive/trumps.widths-responsive";
-@import "inuit-spacing/trumps.spacing";
+//@import "inuit-widths/trumps.widths";
+//@import "inuit-widths-responsive/trumps.widths-responsive";
+//@import "inuit-spacing/trumps.spacing";

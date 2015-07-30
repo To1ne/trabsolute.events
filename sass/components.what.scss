@@ -7,7 +7,7 @@
 }
 
 .what__banner {
-    @extend %layout;
+// TODO    @extend %layout;
     padding-top: 30%;
     height: 100%;
     overflow: hidden;
@@ -16,7 +16,7 @@
 
 .what__icon,
 .what__desc {
-    @extend %layout__item;
+// TODO    @extend %layout__item;
     height: 226px;
 }
 
@@ -75,7 +75,7 @@
     background-image: url('../img/sound-and-light.jpg'); /* source: https://www.flickr.com/photos/maximeraphael/14410133394 */
     background-image: url('../img/sound-and-light.jpg'); /* source: https://www.flickr.com/photos/hlkljgk/4716374366 */
     .what__banner {
-	@extend %layout--rev;
+// TODO @extend %layout--rev;
     }
     .what__desc {
 	text-align: right !important;

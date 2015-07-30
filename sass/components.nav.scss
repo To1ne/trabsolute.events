@@ -6,12 +6,12 @@ nav {
 }
 
 .nav {
-    @extend %layout;
+// TODO    @extend %layout;
     height: 100%;
 }
 
 .nav__item {
-    @extend %layout__item;
+// TODO    @extend %layout__item;
     text-align: center;
     font-size: 1.5em;
     height: 100%;
@@ -34,10 +34,12 @@ nav {
 }
 
 .nav__item svg {
+  /* TODO
     @include media-query(desk) {
 	margin: 0 auto;
 	display: block;
     }
+ */
     display: none;
 }
 

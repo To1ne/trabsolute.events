@@ -3,6 +3,9 @@ $font-stack: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $inuit-use-fractions: false;
 $inuit-enable-layout--rev: true;
 
+$inuit-base-line-height:        24px !default;
+$inuit-base-spacing-unit:           $inuit-base-line-height;
+
 $experimental-support-for-webkit: true;
 $experimental-support-for-khtml: true;
 $experimental-support-for-mozilla: true;
