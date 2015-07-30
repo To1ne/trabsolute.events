@@ -43,12 +43,6 @@ nav {
     display: none;
 }
 
-.nav__item {
-    @extend %layout__item;
-    text-align: center;
-    font-size: 1.5em;
-}
-
 .nav__item a {
     text-decoration: none;
     width: 100%;
