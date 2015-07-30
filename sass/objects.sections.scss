@@ -20,9 +20,14 @@ article {
     background-size: cover;
 }
 
+/**
+ * 1. Make it easier to use ems for margins
+ * 2. To place the heading over the articles
+ */
 h1 {
   text-align: center;
-  margin: 0 0 -1.5em;
+  line-height: 1em;   /* [1] */
+  margin: 1em 0 -2em; /* [2] */
   color: $dark-color;
   position: sticky;
   top: 1em;
