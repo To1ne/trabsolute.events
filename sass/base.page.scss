@@ -7,11 +7,12 @@ html {
 
 
 /**
- * Remove default margin.
+ * 1. Remove default margin.
+ * 2. Give Safari's _overshoot_ a background
  */
 body {
-    margin: 0;
-    background: transparent;
+    margin: 0;         /* [1] */
+    background: black; /* [2] */
 }
 
 svg {
