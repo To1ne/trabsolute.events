@@ -1,5 +1,11 @@
-#footer-spacer {
-    margin-bottom: 300px;
+#footer--spacer {
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+
+footer {
+    background-color: $footer-bg-color;
 }
 
 /**
@@ -9,7 +15,7 @@
     color: #FFF;
     text-align: right;
 
-    background-color: #000000;
+    background-color: $footer-bg-color;
     padding-right: 30px;
     height: 300px;    
     width: 100%;

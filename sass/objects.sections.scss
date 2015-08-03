@@ -11,8 +11,8 @@ section, article, header {
  * 1. to move over the nav bar in the header
  */
 section {
-    position: relative; /* [1] */
-    z-index: 40;
+    position: relative;
+    z-index: 40; /* [1] */
 }
 
 article {
