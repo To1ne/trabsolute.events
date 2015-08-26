@@ -1,3 +1,5 @@
+$banner-icon-size: 200px;
+
 #what {
   height: auto;
 
@@ -22,7 +24,7 @@
 .what__icon,
 .what__desc {
     @extend %layout__item;
-    height: 226px;
+    height: $banner-icon-size;
     color: $dark-color;
     z-index: 25;
     position: relative;
@@ -50,16 +52,21 @@
     position: absolute;
     top: 0;
 }
+/**
+ * 1. correction for decimals
+*/
 .what__icon--bg::before {
-    margin-left: -113.5px;
+    margin-left: -$banner-icon-size/2 + 1px; /* [1] */
     left: 0;
 }
 .what__icon--bg::after {
-    margin-right: -113.5px;
+    margin-right: -$banner-icon-size/2 + 1px; /* [1] */
     right: 0;
 }
 .what__icon svg {
     margin:0 auto;
+    height: $banner-icon-size;
+    width: $banner-icon-size;
 }
 
 .what__desc {

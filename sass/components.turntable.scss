@@ -46,6 +46,10 @@
     @include experimental(transform-origin, 100px 100px);
 }
 
+#what__crew #smile {
+  @include experimental(transform-origin, 100px 140px);
+}
+
 #what__facility #smile {
     @include experimental(transform-origin, 123px 171px);
 }
